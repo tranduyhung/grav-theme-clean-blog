@@ -1,0 +1,40 @@
+en:
+    THEME_CLEAN_BLOG:
+        ADMIN:
+            SUBHEADING:
+                LABEL: Subheading
+                HELP: Page's subheading, shown in header
+            HEADER_IMAGE:
+                LABEL: Header Background Image
+                HELP: File name of an image in page's folder, used as header's background image
+            COPYRIGHT:
+                LABEL: Copyright
+                HELP: Copyright text shown in footer
+            FAVICON:
+                LABEL: favicon
+                HELP: File name of an image in the theme's "img" folder to use as favicon
+            ERROR_HEADER_IMAGE:
+                LABEL: Error Page's Header Image
+                HELP: File name of an image in the theme's "img" folder to use as header image of error page
+            SOCIAL_ICONS:
+                LABEL: Social Network Icons
+                HELP: Social network icons shown in footer
+                FIELDS:
+                    ICON:
+                        LABEL: FontAwesome Icon
+                        HELP: FontAwesome icon class, example: fa-facebook
+                    URL:
+                        LABEL: URL
+                        HELP: Social network channel's URL
+        CONTACT:
+            NAME: Name
+            EMAIL: Email Address
+            PHONE: Phone Number
+            MESSAGE: Message
+            SEND: Send
+        POST_BY: Posted by
+        POST_ON: on
+        OLDER_POSTS: Older Posts
+        NEWER_POSTS: Newer Posts
+        MENU: Menu
+        TOGGLE_NAVIGATION: Toggle navigation

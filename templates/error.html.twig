@@ -1,0 +1,31 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block header %}
+{% if theme_config.error_header_image %}
+    {% set style = ' style="background-image: url(\'' ~ url('theme://img/' ~ theme_config.error_header_image)  ~ '\')"' %}
+{% else %}
+    {% set style = '' %}
+{% endif %}
+
+<header class="intro-header"{{ style }}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                    <h1>{{ 'ERROR'|t }} {{ page.header.http_response_code }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+            {{ page.content }}
+        </div>
+    </div>
+</div>
+{% endblock %}

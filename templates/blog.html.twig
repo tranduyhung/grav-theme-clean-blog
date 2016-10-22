@@ -1,0 +1,27 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+{% set collection = page.collection() %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {% for post in collection %}
+        <div class="post-preview">
+            <a href="{{ post.url }}">
+                <h2 class="post-title">{{ post.title }}</h2>
+                {% if post.header.subheading %}
+                <h3 class="post-subtitle">{{ post.header.subheading }}</h3>
+                {% endif %}
+
+            </a>
+            <p class="post-meta">{{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ post.date|date("F d, Y") }}</p>
+        </div>
+        <hr>
+        {% endfor %}
+        {% if config.plugins.pagination.enabled and collection.params.pagination %}
+            {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+        {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

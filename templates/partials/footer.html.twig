@@ -1,0 +1,27 @@
+<hr>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% if theme_config.social_icons|length > 0 %}
+                <ul class="list-inline text-center">
+                    {% for icon in theme_config.social_icons %}
+                    <li>
+                        <a href="{{ icon.url }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse {{ icon.icon }}"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if theme_config.copyright %}
+                <p class="copyright text-muted">{{ theme_config.copyright }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>

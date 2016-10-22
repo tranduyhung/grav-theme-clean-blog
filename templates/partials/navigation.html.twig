@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">{{ 'THEME_CLEAN_BLOG.TOGGLE_NAVIGATION'|t }}</span>
+                {{ 'THEME_CLEAN_BLOG.MENU'|t }} <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">{{ site.title }}</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                {% for p in pages.children.visible %}
+                <li>
+                    <a href="{{ p.url }}">{{ p.menu }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

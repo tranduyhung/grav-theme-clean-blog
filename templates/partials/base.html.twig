@@ -1,0 +1,28 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getLanguage ?: 'en' }}">
+    <head>
+        {% block head %}
+            {% include 'partials/head.html.twig' %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block navigation %}
+            {% include 'partials/navigation.html.twig' %}
+        {% endblock %}
+
+        {% block header %}
+            {% include 'partials/header.html.twig' %}
+        {% endblock %}
+
+        {% block content %}{% endblock %}
+
+        {% block footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+
+        {% block bottom %}
+            {{ assets.js('bottom') }}
+        {% endblock %}
+    </body>
+</html>
