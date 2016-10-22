@@ -38,3 +38,44 @@ en:
         NEWER_POSTS: Newer Posts
         MENU: Menu
         TOGGLE_NAVIGATION: Toggle navigation
+        
+fr:
+    THEME_CLEAN_BLOG:
+        ADMIN:
+            SUBHEADING:
+                LABEL: Sous-titre
+                HELP: Sous-titre de la page à indiquer dans l’en-tête
+            HEADER_IMAGE:
+                LABEL: Image de fond de l’en-tête
+                HELP: Nom de fichier d’une image dans le dossier de la page, utilisée comme image de fond de l’en-tête
+            COPYRIGHT:
+                LABEL: Copyright
+                HELP: Texte de copyright à afficher dans le pied de page
+            FAVICON:
+                LABEL: favicon
+                HELP: Nom de fichiser d’une image présente dans le dossier "img" du thème à utiliser comme favicon
+            ERROR_HEADER_IMAGE:
+                LABEL: Image d’erreur pour l’en-tête de la page
+                HELP: Nom de fichiser d’une image présente dans le dossier "img" du thème à utiliser comme image d’en-tête pour la page d’erreur
+            SOCIAL_ICONS:
+                LABEL: Icônes des réseaux sociaux
+                HELP: Icônes des réseaux sociaux à afficher dans le pied de page
+                FIELDS:
+                    ICON:
+                        LABEL: Icône FontAwesome
+                        HELP: Classe de l’icône FontAwesome, exemple : fa-facebook
+                    URL:
+                        LABEL: URL
+                        HELP: URL du réseau social
+        CONTACT:
+            NAME: Nom
+            EMAIL: Adresse e-mail
+            PHONE: Numéro de téléphone
+            MESSAGE: Message
+            SEND: Envoyer
+        POST_BY: Publié par
+        POST_ON: sur
+        OLDER_POSTS: Posts plus anciens
+        NEWER_POSTS: Posts plus récents
+        MENU: Menu
+        TOGGLE_NAVIGATION: Basculer la navigation
