@@ -1,6 +1,7 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block header %}
+{% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "F d, Y" %}
 {% if page.header.header_image %}
     {% set style = ' style="background-image: url(\'' ~ page.media.images[page.header.header_image].url()  ~ '\')"' %}
 {% else %}
@@ -16,7 +17,7 @@
                     {% if page.header.subheading %}
                     <h2 class="subheading">{{ page.header.subheading }}</h2>
                     {% endif %}
-                    <span class="meta">{{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ post.date|date("F d, Y") }}</span>
+                    <span class="meta">{{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</span>
                 </div>
             </div>
         </div>

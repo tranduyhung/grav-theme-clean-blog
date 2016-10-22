@@ -1,7 +1,7 @@
 name: Clean Blog
 description: "Grav theme based on Clean Blog HTML template of Start Bootstrap."
 version: 1.0.0
-icon: mobile
+icon: edit
 author:
   name: Hung Tran
   email: hungtran@peaceofmindwebsite.com
