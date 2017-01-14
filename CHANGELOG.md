@@ -1,3 +1,9 @@
+# v1.1.1
+## 14/01/2017
+
+1. [](#bugfix)
+    * Fixed incorrect IE check
+
 # v1.1.0
 ## 14/01/2017
 
@@ -6,9 +12,6 @@
 1. [](#bugfix)
     * Fixed wrong author and date in blog item
     * Fixed incorrect closing tag in blog item
-
-
-
 
 # v1.0.0
 ## 22/10/2016
