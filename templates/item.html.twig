@@ -17,7 +17,7 @@
                     {% if page.header.subheading %}
                     <h2 class="subheading">{{ page.header.subheading }}</h2>
                     {% endif %}
-                    <span class="meta">{{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</span>
+                    <span class="meta">{{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ page.header.author }} {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ page.date|date(dateformat) }}</span>
                 </div>
             </div>
         </div>
