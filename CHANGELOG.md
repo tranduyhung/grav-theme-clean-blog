@@ -1,3 +1,11 @@
+# v1.2.0
+## 29/01/2017
+
+1. [](#improved)
+    * German translation added
+    * Added option to set default header image
+    * Enabled image caching
+
 # v1.1.1
 ## 14/01/2017
 

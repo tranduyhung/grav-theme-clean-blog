@@ -13,6 +13,9 @@ en:
             FAVICON:
                 LABEL: favicon
                 HELP: File name of an image in the theme's "img" folder to use as favicon
+            DEFAULT_HEADER_IMAGE:
+                LABEL: Default Header Image
+                HELP: File name of an image in the theme's "img" folder to use as header image if page doesn't have header image
             ERROR_HEADER_IMAGE:
                 LABEL: Error Page's Header Image
                 HELP: File name of an image in the theme's "img" folder to use as header image of error page

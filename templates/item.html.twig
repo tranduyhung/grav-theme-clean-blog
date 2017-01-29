@@ -1,9 +1,12 @@
 {% extends 'partials/base.html.twig' %}
 
-{% block header %}
 {% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "F d, Y" %}
+
+{% block header %}
 {% if page.header.header_image %}
-    {% set style = ' style="background-image: url(\'' ~ page.media.images[page.header.header_image].url()  ~ '\')"' %}
+    {% set style = ' style="background-image: url(\'' ~ page.media.images[page.header.header_image].cache.url()  ~ '\')"' %}
+{% elseif theme_config.default_header_image %}
+    {% set style = ' style="background-image: url(\'' ~ url('theme://img/' ~ theme_config.default_header_image)  ~ '\')"' %}
 {% else %}
     {% set style = '' %}
 {% endif %}
