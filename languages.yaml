@@ -6,19 +6,19 @@ en:
                 HELP: Page's subheading, shown in header
             HEADER_IMAGE:
                 LABEL: Header Background Image
-                HELP: File name of an image in page's folder, used as header's background image
+                HELP: Image file used used as header's background image
             COPYRIGHT:
                 LABEL: Copyright
                 HELP: Copyright text shown in footer
             FAVICON:
                 LABEL: favicon
-                HELP: File name of an image in the theme's "img" folder to use as favicon
+                HELP: Image file used as favicon
             DEFAULT_HEADER_IMAGE:
                 LABEL: Default Header Image
-                HELP: File name of an image in the theme's "img" folder to use as header image if page doesn't have header image
+                HELP: Image file used as header image if page doesn't have header image
             ERROR_HEADER_IMAGE:
                 LABEL: Error Page's Header Image
-                HELP: File name of an image in the theme's "img" folder to use as header image of error page
+                HELP: Image file used as header image of error page
             SOCIAL_ICONS:
                 LABEL: Social Network Icons
                 HELP: Social network icons shown in footer

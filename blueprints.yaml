@@ -3,9 +3,9 @@ description: "Grav theme based on Clean Blog HTML template of Start Bootstrap."
 version: 1.2.0
 icon: edit
 author:
-  name: Hung Tran
-  email: hungtran@peaceofmindwebsite.com
-  url: http://www.peaceofmindwebsite.com
+    name: Hung Tran
+    email: hungtran@peaceofmindwebsite.com
+    url: http://www.peaceofmindwebsite.com
 homepage: https://github.com/tranduyhung/grav-theme-clean-blog
 demo: http://www.peaceofmindwebsite.com/skeletons/clean-blog
 keywords: theme, template, bootstrap, clean, blog, responsive, html5
@@ -13,22 +13,37 @@ bugs: https://github.com/tranduyhung/grav-theme-clean-blog/issues
 license: MIT
 
 form:
-  validation: loose
-  fields:
+    validation: loose
+    fields:
     copyright:
         type: textarea
         label: THEME_CLEAN_BLOG.ADMIN.COPYRIGHT.LABEL
         help: THEME_CLEAN_BLOG.ADMIN.COPYRIGHT.HELP
     favicon:
-        type: text
+        type: filepicker
+        folder: 'theme@:/img'
+        preview_images: true
+        acccept:
+            - .png
+            - .jpg
         label: THEME_CLEAN_BLOG.ADMIN.FAVICON.LABEL
         help: THEME_CLEAN_BLOG.ADMIN.FAVICON.HELP
     default_header_image:
-        type: text
+        type: filepicker
+        folder: 'theme@:/img'
+        preview_images: true
+        acccept:
+            - .png
+            - .jpg
         label: THEME_CLEAN_BLOG.ADMIN.DEFAULT_HEADER_IMAGE.LABEL
         help: THEME_CLEAN_BLOG.ADMIN.DEFAULT_HEADER_IMAGE.HELP
     error_header_image:
-        type: text
+        type: filepicker
+        folder: 'theme@:/img'
+        preview_images: true
+        acccept:
+            - .png
+            - .jpg
         label: THEME_CLEAN_BLOG.ADMIN.ERROR_HEADER_IMAGE.LABEL
         help: THEME_CLEAN_BLOG.ADMIN.ERROR_HEADER_IMAGE.HELP
     social_icons:
