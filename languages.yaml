@@ -38,7 +38,46 @@ en:
         NEWER_POSTS: Newer Posts
         MENU: Menu
         TOGGLE_NAVIGATION: Toggle navigation
-        
+de:
+    THEME_CLEAN_BLOG:
+        ADMIN:
+            SUBHEADING:
+                LABEL: Unterüberschrift
+                HELP: Wird im Header unter der Überschrift gezeigt
+            HEADER_IMAGE:
+                LABEL: Hintergrundbild
+                HELP: Dateiname eines Bilds von dieser Seite, das als Hintergrundbild verwendet wird
+            COPYRIGHT:
+                LABEL: Copyright
+                HELP: Copyright-Text im Footer
+            FAVICON:
+                LABEL: Favicon
+                HELP: Dateiname eines Bilds im "img"-Verzeichnis des Themes, das als Favicon verwendet wird
+            ERROR_HEADER_IMAGE:
+                LABEL: Hintergrundbild für Fehler-Seiten
+                HELP: Dateiname eines Bilds im "img"-Verzeichnis des Themes, das als Header für Fehler-Seiten verwendet wird
+            SOCIAL_ICONS:
+                LABEL: Social Network Icons
+                HELP: Icons für soziale Netzwerke, die im Footer gezeigt werden
+                FIELDS:
+                    ICON:
+                        LABEL: FontAwesome Icon
+                        HELP: FontAwesome icon class, example: fa-facebook
+                    URL:
+                        LABEL: URL
+                        HELP: URL zum Profil im sozialen Netzwerk
+        CONTACT:
+            NAME: Name
+            EMAIL: E-Mail-Adresse
+            PHONE: Telefonnummer
+            MESSAGE: Nachricht
+            SEND: Senden
+        POST_BY: von
+        POST_ON: am
+        OLDER_POSTS: Ältere Posts
+        NEWER_POSTS: Neuere Posts
+        MENU: Menü
+        TOGGLE_NAVIGATION: Navigation umschalten
 fr:
     THEME_CLEAN_BLOG:
         ADMIN:
