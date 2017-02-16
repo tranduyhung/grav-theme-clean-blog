@@ -1,3 +1,9 @@
+# v1.3.0
+## 16/02/2017
+
+1. [](#improved)
+    * Integration with [JSComments plugin](https://github.com/Sommerregen/grav-plugin-jscomments)
+
 # v1.2.0
 ## 29/01/2017
 
