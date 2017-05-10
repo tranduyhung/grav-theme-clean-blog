@@ -1,3 +1,10 @@
+# v1.3.1
+## 10/05/2017
+
+1. [](#bugfix)
+    * Fixed issue with JavaScript assets
+
+
 # v1.3.0
 ## 16/02/2017
 
