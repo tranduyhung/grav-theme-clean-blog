@@ -1,3 +1,10 @@
+# v1.4.0
+## 24/05/2017
+
+1. [](#new)
+    * Added Open Graph properties
+
+
 # v1.3.1
 ## 10/05/2017
 

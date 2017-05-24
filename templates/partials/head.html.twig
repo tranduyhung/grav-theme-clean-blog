@@ -42,3 +42,21 @@
         {% do assets.addJs('https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') %}
     {% endif %}
 {% endblock %}
+
+{# Site URL is not correct if Grav is in subfolder #}
+{% set site_url = base_url_absolute|replace({(base_url): ''}) %}
+
+{% if page.header.header_image %}
+    {% set og_image = site_url ~  page.media.images[page.header.header_image].cache.url() %}
+{% elseif page.media.images|length > 0 %}
+    {% set og_image = site_url ~  page.media.images|first.cache.url() %}
+{% else %}
+    {% set og_image = '' %}
+{% endif %}
+
+<meta property="og:url" content="{{ page.url(true) }}" />
+<meta property="og:title" content="{{ page.title|e('html_attr') }}" />
+<meta property="og:description" content="{{ page.header.metadata.description|e('html_attr') }}" />
+{% if og_image is not empty %}
+<meta property="og:image" content="{{ og_image }}" />
+{% endif %}
