@@ -25,7 +25,7 @@ en:
                 FIELDS:
                     ICON:
                         LABEL: FontAwesome Icon
-                        HELP: FontAwesome icon class, example: fa-facebook
+                        HELP: "FontAwesome icon class, example: fa-facebook"
                     URL:
                         LABEL: URL
                         HELP: Social network channel's URL
@@ -65,7 +65,7 @@ de:
                 FIELDS:
                     ICON:
                         LABEL: FontAwesome Icon
-                        HELP: FontAwesome icon class, example: fa-facebook
+                        HELP: "FontAwesome icon class, example: fa-facebook"
                     URL:
                         LABEL: URL
                         HELP: URL zum Profil im sozialen Netzwerk
@@ -105,7 +105,7 @@ fr:
                 FIELDS:
                     ICON:
                         LABEL: Icône FontAwesome
-                        HELP: Classe de l’icône FontAwesome, exemple : fa-facebook
+                        HELP: "Classe de l’icône FontAwesome, exemple : fa-facebook"
                     URL:
                         LABEL: URL
                         HELP: URL du réseau social
