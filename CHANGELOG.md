@@ -1,3 +1,11 @@
+# v1.4.2
+## 04/12/2017
+
+1. [](#bugfix)
+    * Fixed mobile navigation and link in title not working
+2. [](#improved)
+    * Social network links open in new window.
+
 # v1.4.1
 ## 27/05/2017
 
