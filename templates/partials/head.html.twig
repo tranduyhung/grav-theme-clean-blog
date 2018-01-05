@@ -16,7 +16,7 @@
 <meta name="robots" content="{{ header.robots }}">
 {% endif %}
 
-<title>{% if header.title %}{{ header.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{{ site.title }} - {{ page.title }}</title>
 
 {% block stylesheets %}
     {% do assets.addCss('theme://vendor/bootstrap/css/bootstrap.min.css') %}
