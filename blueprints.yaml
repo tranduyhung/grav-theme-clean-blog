@@ -4,10 +4,10 @@ version: 1.4.3
 icon: edit
 author:
   name: Hung Tran
-  email: hungtran@peaceofmindwebsite.com
-  url: http://www.peaceofmindwebsite.com
+  email: flatfiledeveloper@gmail.com
+  url: https://flatfiledeveloper.com
 homepage: https://github.com/tranduyhung/grav-theme-clean-blog
-demo: http://www.peaceofmindwebsite.com/skeletons/clean-blog
+demo: https://grav-theme-clean-blog.flatfiledeveloper.com
 keywords: theme, template, bootstrap, clean, blog, responsive, html5
 bugs: https://github.com/tranduyhung/grav-theme-clean-blog/issues
 license: MIT
