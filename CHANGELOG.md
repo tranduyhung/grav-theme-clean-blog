@@ -1,3 +1,11 @@
+# v1.4.3
+## 06/04/2018
+
+1. [](#bugfix)
+    * Fixed contact form not shown
+2. [](#improved)
+    * Improvement in page title
+
 # v1.4.2
 ## 04/12/2017
 
