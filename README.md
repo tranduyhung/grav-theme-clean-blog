@@ -4,7 +4,11 @@
 
 Clean Blog theme is a port of [Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) by [Start Bootstrap](https://startbootstrap.com/).
 
-# Features
+## Demo
+
+You can find a demo of the theme at [grav-theme-clean-blog.flatfiledeveloper.com](https://grav-theme-clean-blog.flatfiledeveloper.com).
+
+## Features
 
 * Fully responsive
 * Modern design with a subtle splash of color (which is easy to customize, especially with LESS!)
@@ -12,9 +16,9 @@ Clean Blog theme is a port of [Clean Blog](https://startbootstrap.com/template-o
 * Footer with social links and copyright information
 * LESS files included for deeper customization options
 
-# Installation
+## Installation
 
-## GPM Installation (Preferred)
+### GPM Installation (Preferred)
 
 The simplest way to install this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
 
@@ -22,7 +26,7 @@ The simplest way to install this theme is via the [Grav Package Manager (GPM)](h
 
 This will install the Gateway theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/clean-blog`.
 
-## Manual Installation
+### Manual Installation
 
 To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `clean-blog`.
 
@@ -30,14 +34,14 @@ You should now have all the theme files under
 
     /your/site/grav/user/themes/clean-blog
 
-## Required Plugins:
+### Required Plugins:
 
 * [Error](https://github.com/getgrav/grav-theme-error)
 * [Problems](https://github.com/getgrav/grav-plugin-problems)
 * [Email](https://github.com/getgrav/grav-plugin-email)
 * [Form](https://github.com/getgrav/grav-plugin-form)
 
-# Setup
+## Setup
 
 If you want to set Clean Blog as the default theme, you can do so by following these steps:
 
@@ -49,13 +53,13 @@ If you want to set Clean Blog as the default theme, you can do so by following t
 
 Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **clean-blog** folder.
 
-# Manage page with Admin plugin
+## Manage page with Admin plugin
 
 If you have [Admin plugin](https://github.com/getgrav/grav-plugin-admin) installed, you can set subheading and header's background image when you edit a page, they are at the bottom of **Content** tab.
 
-# Updating
+## Updating
 
-## GPM Update (Preferred)
+### GPM Update (Preferred)
 
 The simplest way to update this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm). You can do this with this by navigating to the root directory of your Grav install using your system's Terminal (also called command line) and typing the following:
 
@@ -63,7 +67,7 @@ The simplest way to update this theme is via the [Grav Package Manager (GPM)](ht
 
 This command will check your Grav install to see if your Gateway theme is due for an update. If a newer release is found, you will be asked whether or not you wish to update. To continue, type `y` and hit enter. The theme will automatically update and clear Grav's cache.
 
-## Manual Update
+### Manual Update
 
 Manually updating Clean Blog is pretty simple. Here is what you will need to do to get this done:
 
