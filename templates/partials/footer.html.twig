@@ -19,7 +19,7 @@
                 </ul>
                 {% endif %}
                 {% if theme_config.copyright %}
-                <p class="copyright text-muted">{{ theme_config.copyright }}</p>
+                <p class="copyright text-muted">{{ theme_config.copyright|raw }}</p>
                 {% endif %}
             </div>
         </div>

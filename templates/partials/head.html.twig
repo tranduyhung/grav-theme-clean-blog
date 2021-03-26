@@ -30,7 +30,7 @@
     {% endif %}
 {% endblock %}
 
-{{ assets.css() }}
+{{ assets.css()|raw }}
 
 {% block javascripts %}
     {% do assets.addJs('jquery', 101) %}

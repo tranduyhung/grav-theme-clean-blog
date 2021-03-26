@@ -9,9 +9,9 @@
         {% for post in collection %}
         <div class="post-preview">
             <a href="{{ post.url }}">
-                <h2 class="post-title">{{ post.title }}</h2>
+                <h2 class="post-title">{{ post.title|raw }}</h2>
                 {% if post.header.subheading %}
-                <h3 class="post-subtitle">{{ post.header.subheading }}</h3>
+                <h3 class="post-subtitle">{{ post.header.subheading|raw }}</h3>
                 {% endif %}
 
             </a>
