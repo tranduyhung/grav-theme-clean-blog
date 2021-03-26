@@ -1,3 +1,9 @@
+# v1.4.4
+## 03/26/2021
+
+1. [](#bugfix)
+    * Added raw filter for Grav 1.7 compatibility
+
 # v1.4.3
 ## 06/04/2018
 

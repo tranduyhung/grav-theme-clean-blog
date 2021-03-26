@@ -6,15 +6,15 @@
     {% set style = '' %}
 {% endif %}
 
-<header class="intro-header"{{ style }}>
+<header class="intro-header"{{ style|raw }}>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>{{ page.title }}</h1>
+                    <h1>{{ page.title|raw }}</h1>
                     {% if page.header.subheading %}
                     <hr class="small">
-                    <span class="subheading">{{ page.header.subheading }}</span>
+                    <span class="subheading">{{ page.header.subheading|raw }}</span>
                     {% endif %}
                 </div>
             </div>

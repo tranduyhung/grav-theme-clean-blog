@@ -22,7 +22,7 @@
         {% endblock %}
 
         {% block bottom %}
-            {{ assets.js() }}
+            {{ assets.js()|raw }}
         {% endblock %}
     </body>
 </html>
