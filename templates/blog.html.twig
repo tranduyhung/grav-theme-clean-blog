@@ -3,26 +3,31 @@
 {% block content %}
 {% set collection = page.collection() %}
 {% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "F d, Y" %}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        {% for post in collection %}
-        <div class="post-preview">
-            <a href="{{ post.url }}">
-                <h2 class="post-title">{{ post.title }}</h2>
-                {% if post.header.subheading %}
-                <h3 class="post-subtitle">{{ post.header.subheading }}</h3>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                {% for post in collection %}
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <a href="{{ post.url }}">
+                        <h2 class="post-title">{{ post.title }}</h2>
+                        {% if post.header.subheading %}
+                        <h3 class="post-subtitle">{{ post.header.subheading }}</h3>
+                        {% endif %}
+                    </a>
+                    <p class="post-meta">
+                        {{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ post.header.author }}
+                        {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}
+                    </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                {% endfor %}
+                {% if config.plugins.pagination.enabled and collection.params.pagination %}
+                <!-- Pager-->
+                {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
                 {% endif %}
-
-            </a>
-            <p class="post-meta">{{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</p>
-        </div>
-        <hr>
-        {% endfor %}
-        {% if config.plugins.pagination.enabled and collection.params.pagination %}
-            {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
-        {% endif %}
+            </div>
         </div>
     </div>
-</div>
 {% endblock %}

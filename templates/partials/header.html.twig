@@ -1,21 +1,18 @@
 {% if page.header.header_image %}
-    {% set style = ' style="background-image: url(\'' ~ page.media.images[page.header.header_image].cache.url()  ~ '\')"' %}
+    {% set image_url = page.media.images[page.header.header_image].cache.url() %}
 {% elseif theme_config.default_header_image %}
-    {% set style = ' style="background-image: url(\'' ~ url('theme://img/' ~ theme_config.default_header_image)  ~ '\')"' %}
+    {% set image_url = url('theme://img/' ~ theme_config.default_header_image) %}
 {% else %}
-    {% set style = '' %}
+    {% set image_url = '' %}
 {% endif %}
 
-<header class="intro-header"{{ style }}>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<header class="masthead" style="background-image: url('{{ image_url }}');">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
                     <h1>{{ page.title }}</h1>
-                    {% if page.header.subheading %}
-                    <hr class="small">
                     <span class="subheading">{{ page.header.subheading }}</span>
-                    {% endif %}
                 </div>
             </div>
         </div>

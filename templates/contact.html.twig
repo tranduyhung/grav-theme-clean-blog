@@ -1,12 +1,16 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            {{ page.content }}
-            {% include "forms/form.html.twig" with { forms: "contact-form" } %}
+    <main class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    {{ page.content|raw }}
+                    <div class="my-5">
+                        {% include "forms/form.html.twig" with { forms: "contact-form" } %}
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </main>
 {% endblock %}
