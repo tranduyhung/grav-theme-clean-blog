@@ -1,6 +1,6 @@
 name: Clean Blog
 description: "Grav theme based on Clean Blog HTML template of Start Bootstrap."
-version: 1.4.4
+version: 2.0.0
 icon: edit
 author:
   name: Hung Tran
@@ -16,31 +16,31 @@ form:
   validation: loose
   fields:
     copyright:
-        type: textarea
-        label: THEME_CLEAN_BLOG.ADMIN.COPYRIGHT.LABEL
-        help: THEME_CLEAN_BLOG.ADMIN.COPYRIGHT.HELP
+      type: textarea
+      label: THEME_CLEAN_BLOG.ADMIN.COPYRIGHT.LABEL
+      help: THEME_CLEAN_BLOG.ADMIN.COPYRIGHT.HELP
     favicon:
-        type: text
-        label: THEME_CLEAN_BLOG.ADMIN.FAVICON.LABEL
-        help: THEME_CLEAN_BLOG.ADMIN.FAVICON.HELP
+      type: text
+      label: THEME_CLEAN_BLOG.ADMIN.FAVICON.LABEL
+      help: THEME_CLEAN_BLOG.ADMIN.FAVICON.HELP
     default_header_image:
-        type: text
-        label: THEME_CLEAN_BLOG.ADMIN.DEFAULT_HEADER_IMAGE.LABEL
-        help: THEME_CLEAN_BLOG.ADMIN.DEFAULT_HEADER_IMAGE.HELP
+      type: text
+      label: THEME_CLEAN_BLOG.ADMIN.DEFAULT_HEADER_IMAGE.LABEL
+      help: THEME_CLEAN_BLOG.ADMIN.DEFAULT_HEADER_IMAGE.HELP
     error_header_image:
-        type: text
-        label: THEME_CLEAN_BLOG.ADMIN.ERROR_HEADER_IMAGE.LABEL
-        help: THEME_CLEAN_BLOG.ADMIN.ERROR_HEADER_IMAGE.HELP
+      type: text
+      label: THEME_CLEAN_BLOG.ADMIN.ERROR_HEADER_IMAGE.LABEL
+      help: THEME_CLEAN_BLOG.ADMIN.ERROR_HEADER_IMAGE.HELP
     social_icons:
-        type: list
-        label: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.LABEL
-        help: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.HELP
-        fields:
-            .icon:
-                type: text
-                label: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.ICON.LABEL
-                help: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.ICON.HELP
-            .url:
-                type: text
-                label: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.URL.LABEL
-                help: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.URL.HELP
+      type: list
+      label: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.LABEL
+      help: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.HELP
+      fields:
+        .icon:
+          type: text
+          label: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.ICON.LABEL
+          help: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.ICON.HELP
+        .url:
+          type: text
+          label: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.URL.LABEL
+          help: THEME_CLEAN_BLOG.ADMIN.SOCIAL_ICONS.FIELDS.URL.HELP

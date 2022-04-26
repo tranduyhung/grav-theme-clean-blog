@@ -1,17 +1,15 @@
-<hr>
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<footer class="border-top">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
                 {% if theme_config.social_icons|length > 0 %}
                 <ul class="list-inline text-center">
                     {% for icon in theme_config.social_icons %}
-                    <li>
-                        <a href="{{ icon.url }}" target="_blank">
+                    <li class="list-inline-item">
+                        <a href="{{ icon.url }}">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-stack-1x fa-inverse {{ icon.icon }}"></i>
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-1x fa-inverse {{ icon.icon }}"></i>
                             </span>
                         </a>
                     </li>
@@ -19,9 +17,10 @@
                 </ul>
                 {% endif %}
                 {% if theme_config.copyright %}
-                <p class="copyright text-muted">{{ theme_config.copyright|raw }}</p>
+                <div class="small text-center text-muted fst-italic">{{ theme_config.copyright|raw }}</div>
                 {% endif %}
             </div>
         </div>
     </div>
 </footer>
+

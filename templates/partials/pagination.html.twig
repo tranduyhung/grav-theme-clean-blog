@@ -2,17 +2,20 @@
 {% set base_url = base_url|default(page.url) %}
 
 {% if pagination|length > 1 %}
-
-<ul class="pager">
+<div class="row">
+    <div class="col">
     {% if pagination.hasPrev %}
-        {% set url =  (base_url ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
-        <li class="previous"><a href="{{ url }}">&larr; {{ 'THEME_CLEAN_BLOG.NEWER_POSTS'|t }}</a></li>
+        {% set url =  (base_url ~ page.slug ~ pagination.params ~ pagination.prevUrl)|replace({'//':'/'}) %}
+        <div class="d-flex justify-content-start mb-4"><a class="btn btn-primary text-uppercase" href="{{ url }}">&larr; {{ 'THEME_CLEAN_BLOG.NEWER_POSTS'|t }}</a></div>
     {% endif %}
-
+    </div>
+    {{ page.slug }}
+    <div class="col">
     {% if pagination.hasNext %}
-        {% set url = (base_url ~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
-        <li class="next"><a href="{{ url }}">{{ 'THEME_CLEAN_BLOG.OLDER_POSTS'|t }} &rarr;</a></li>
+        {% set url = (base_url ~ page.slug~ pagination.params ~ pagination.nextUrl)|replace({'//':'/'}) %}
+        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="{{ url }}">{{ 'THEME_CLEAN_BLOG.OLDER_POSTS'|t }} &rarr;</a></div>
     {% endif %}
-</ul>
+    </div>
 
 {% endif %}
+

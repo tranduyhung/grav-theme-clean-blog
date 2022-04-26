@@ -1,6 +1,6 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% for meta in page.metadata %}
     {% if meta.name != 'generator' %}
@@ -16,35 +16,29 @@
 <meta name="robots" content="{{ header.robots }}">
 {% endif %}
 
-<title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+<title>{% if header.title %}{{ header.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 {% block stylesheets %}
-    {% do assets.addCss('theme://vendor/bootstrap/css/bootstrap.min.css') %}
-    {% do assets.addCss('theme://css/clean-blog.min.css') %}
-    {% do assets.addCss('theme://vendor/font-awesome/css/font-awesome.min.css') %}
     {% do assets.addCss('https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic') %}
     {% do assets.addCss('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800') %}
+    {% do assets.addCss('theme://css/styles.css') %}
+{% endblock %}
 
-    {% if browser.getBrowser == 'msie' and browser.getVersion <= 8 %}
-        {% do assets.addCss('theme://css/ie.css') %}
-    {% endif %}
+{% block javascripts %}
+    {% do assets.addJs('https://use.fontawesome.com/releases/v6.1.0/js/all.js') %}
+    {% do assets.addJs('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', {group:'bottom'}) %}
+    {% do assets.addJs('theme://js/scripts.js', {group:'bottom'}) %}
 {% endblock %}
 
 {{ assets.css()|raw }}
-
-{% block javascripts %}
-    {% do assets.addJs('jquery', 101) %}
-    {% do assets.addJs('theme://vendor/bootstrap/js/bootstrap.min.js', 100) %}
-    {% do assets.addJs('theme://js/clean-blog.min.js') %}
-
-    {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
-        {% do assets.addJs('https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') %}
-        {% do assets.addJs('https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') %}
-    {% endif %}
-{% endblock %}
+{{ assets.js()|raw }}
 
 {# Site URL is not correct if Grav is in subfolder #}
-{% set site_url = base_url_absolute|replace({(base_url): ''}) %}
+{% if base_url %}
+    {% set site_url = base_url_absolute|replace({(base_url): ''}) %}
+{% else %}
+    {% set site_url = base_url_absolute %}
+{% endif %}
 
 {% if page.header.header_image %}
     {% set og_image = site_url ~  page.media.images[page.header.header_image].cache.url() %}

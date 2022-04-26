@@ -1,3 +1,9 @@
+# v2.0.0
+## 04/26/2022
+
+1. [](#improved)
+    * Updated to the latest upstream version.
+
 # v1.4.4
 ## 03/26/2021
 
