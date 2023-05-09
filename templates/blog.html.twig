@@ -19,6 +19,9 @@
                         {{ 'THEME_CLEAN_BLOG.POST_BY'|t }} {{ post.header.author }}
                         {{ 'THEME_CLEAN_BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}
                     </p>
+                    <p class="post-preview">
+                        {{ post.summary|raw }}
+                    </p>
                 </div>
                 <!-- Divider-->
                 <hr class="my-4" />
