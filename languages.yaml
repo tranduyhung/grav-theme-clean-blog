@@ -121,3 +121,46 @@ fr:
         NEWER_POSTS: Posts plus récents
         MENU: Menu
         TOGGLE_NAVIGATION: Basculer la navigation
+cs:
+    THEME_CLEAN_BLOG:
+        ADMIN:
+            SUBHEADING:
+                LABEL: Podtitul
+                HELP: Podtitul stránky, zobrazený v záhlaví
+            HEADER_IMAGE:
+                LABEL: Obrázek pozadí záhlaví
+                HELP: Název souboru obrázku ve složce stránky, který se používá jako obrázek na pozadí záhlaví.
+            COPYRIGHT:
+                LABEL: Copyright
+                HELP: Copyright text zobrazený v zápatí
+            FAVICON:
+                LABEL: favicon
+                HELP: Název souboru obrázku ve složce "img" šablony, který se má použít jako favicon.
+            DEFAULT_HEADER_IMAGE:
+                LABEL: Výchozí obrázek záhlaví
+                HELP: Název souboru obrázku ve složce "img" šablony, který se použije jako obrázek záhlaví, pokud stránka nemá vlastní obrázek záhlaví.
+            ERROR_HEADER_IMAGE:
+                LABEL: Obrázek záhlaví stránky s chybou
+                HELP: Název souboru obrázku ve složce "img" šablony, který se použije jako obrázek záhlaví chybové stránky.
+            SOCIAL_ICONS:
+                LABEL: Ikona sociální sítě
+                HELP: Ikona sociální sítě zobrazená v zápatí
+                FIELDS:
+                    ICON:
+                        LABEL: FontAwesome ikona
+                        HELP: "FontAwesome třída ikony, například: fa-facebook"
+                    URL:
+                        LABEL: URL
+                        HELP: Adresa URL kanálu sociální sítě
+        CONTACT:
+            NAME: Jméno
+            EMAIL: Emailová adresa
+            PHONE: Telefonní číslo
+            MESSAGE: Zpráva
+            SEND: Odeslat
+        POST_BY: Přidal/a
+        POST_ON: dne
+        OLDER_POSTS: Starší příspěvky
+        NEWER_POSTS: Novější příspěvky
+        MENU: Menu
+        TOGGLE_NAVIGATION: Zobrazit/skrýt menu
