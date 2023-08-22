@@ -2,7 +2,7 @@
 
 ![Clean Blog Theme screenshot](screenshot.jpg)
 
-Clean Blog theme is a port of [Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) by [Start Bootstrap](https://startbootstrap.com/).
+Clean Blog theme is a port of [Clean Blog](https://startbootstrap.com/theme/clean-blog) by [Start Bootstrap](https://startbootstrap.com/).
 
 # Features
 
