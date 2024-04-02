@@ -1,3 +1,9 @@
+# v2.0.1
+## 04/02/2024
+
+1. [](#bugfix)
+    * Removed disabled attribute on form's submit button
+
 # v2.0.0
 ## 04/26/2022
 
