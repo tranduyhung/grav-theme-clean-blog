@@ -2,7 +2,9 @@
 ## 04/02/2024
 
 1. [](#bugfix)
-    * Removed disabled attribute on form's submit button
+    * Removed disabled attribute on form's submit button (thanks to @pamtbaau)
+    * Added Czech language support (thanks to @otoman)
+    * Updated upstream URL (thanks to @Suplanus)
 
 # v2.0.0
 ## 04/26/2022
